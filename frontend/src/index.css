@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@import "tailwindcss";
+
+/* --- Base Reset --- */
+* {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth; /* Makes scrolling between sections feel like a gallery tour */
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* --- Navigation & Links --- */
+a.active hr {
+    display: block;
+}
+
+@media(max-width:640px){
+    a.active{
+        background-color: black;
+        color: white;
+    }
+}
+
+/* --- Luxury Animations --- */
+
+/* The slow-zoom you have for the Teaser Video/Image */
+@keyframes slow-zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 20s ease-in-out infinite alternate;
+}
+
+/* New: High-End Page Fade-In */
+@keyframes luxuryFadeUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animate-fadeIn {
+  animation: luxuryFadeUp 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* --- Layout Optimization --- */
+
+/* Prevents the "cramped" look on ultra-wide screens */
+.container-luxury {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom Selection color (matching your emerald theme) */
+::selection {
+    background-color: #ecfdf5; /* emerald-50 */
+    color: #065f46; /* emerald-800 */
+}
