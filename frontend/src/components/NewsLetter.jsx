@@ -21,7 +21,7 @@ const NewsLetter = () => {
           The Inner Circle
         </span>
         <h2 className='text-3xl md:text-4xl font-light tracking-tight text-gray-900 mb-6'>
-          Subscribe to our <span className='italic font-medium text-blue-800'>Exclusive</span> newsletter
+          Subscribe to our <span className='italic font-medium text-red-800'>Exclusive</span> newsletter
         </h2>       
         <p className='text-gray-500 font-light text-sm md:text-base max-w-xl mx-auto mb-12 leading-relaxed italic'>
           Gain early access to seasonal collections, private exhibitions, and an effortless 20% off your debut purchase.

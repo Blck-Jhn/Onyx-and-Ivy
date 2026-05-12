@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const BottomTeaser = () => {
   return (
@@ -28,9 +29,11 @@ const BottomTeaser = () => {
           Defined by <span className="text-red-500 italic">Velocity</span>
         </h2>        
         <div className="mt-10 opacity-40 hover:opacity-100 transition-opacity duration-700 cursor-pointer">
-           <p className="text-[8px] tracking-[0.4em] text-white uppercase border-b border-white/20 pb-1">
+           <Link to='/collection'>
+            <p className="text-[8px] tracking-[0.4em] text-white uppercase border-b border-white/20 pb-1">
              Discover the Fleet
            </p>
+           </Link>
         </div>
       </div>
     </div>

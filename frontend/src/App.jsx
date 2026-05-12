@@ -8,16 +8,20 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
 import Orders from './pages/Orders'
+import JobPortal from './pages/JobPortal'
 import PlaceOrder from './pages/PlaceOrder'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   const location = useLocation();
 
   return (
   <div className='min-h-screen bg-stone-50 text-zinc-900 selection:bg-emerald-100'>
+      <ToastContainer/>
       <Navbar />
       <SearchBar/>
       <main className='animate-fadeIn transition-all duration-700'>
@@ -31,6 +35,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/place-order' element={<PlaceOrder />} />
           <Route path='/orders' element={<Orders />} />
+          <Route path='/jobs' element={<JobPortal/>}></Route>
         </Routes>    
       </main>
       

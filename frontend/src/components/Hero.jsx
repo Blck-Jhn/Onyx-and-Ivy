@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -21,9 +22,11 @@ const Hero = () => {
             </h1>
 
             <div className='flex items-center gap-4 group cursor-pointer w-max'>
+              <Link to='/collection'>
               <p className='font-bold text-[10px] tracking-[0.4em] group-hover:text-red-700 group-hover:translate-x-2 transition-all duration-700'>
-    EXPLORE NOW
+                EXPLORE NOW
               </p>
+              </Link>
               <div className='h-px bg-zinc-300 w-12 group-hover:w-20 group-hover:bg-emerald-700 transition-all duration-700'></div>
             </div>
           </div>
