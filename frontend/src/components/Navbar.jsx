@@ -107,9 +107,11 @@ const Navbar = () => {
                             alt='Cart'
                             className='w-5 transition-transform duration-300 group-hover:-rotate-12'
                         />
+                        {getCartCount()>0 && (
                         <p className='absolute -right-2 -bottom-2 w-4 h-4 bg-emerald-600 text-white rounded-full text-[8px] flex items-center justify-center shadow-md'>
                             {getCartCount()}
                         </p>
+                        )}
                     </Link>
 
                     {/* MOBILE MENU ICON */}
