@@ -135,6 +135,7 @@ import About from './About Image.png'
 import ContactImg from './Contact Image.png'
 import Banner from './Banner.png'
 import Banner2 from './Banner2.png'
+import Banner3 from './Banner3.png'
 
 export const assets ={
     logo,
@@ -175,7 +176,8 @@ export const assets ={
     Car5,
     Car7,
     BK2,
-    Banner2
+    Banner2,
+    Banner3
 }
 
 export const products= [
