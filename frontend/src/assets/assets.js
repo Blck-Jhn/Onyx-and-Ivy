@@ -133,6 +133,8 @@ import trash_icon from "./trash_bin_icon.png"
 import Paypal from './Paypal.png'
 import About from './About Image.png'
 import ContactImg from './Contact Image.png'
+import Banner from './Banner.png'
+import Banner2 from './Banner2.png'
 
 export const assets ={
     logo,
@@ -168,7 +170,12 @@ export const assets ={
     HERO_VIDEO_THUMB,
     HERO_VIDEO_THUMB2,
     About,
-    ContactImg
+    ContactImg,
+    Banner,
+    Car5,
+    Car7,
+    BK2,
+    Banner2
 }
 
 export const products= [
